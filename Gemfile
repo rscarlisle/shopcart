@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 
+gem 'i18n', '~> 0.6.11'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -19,7 +21,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'sdoc', '~> 0.4.0'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 group :development do
@@ -33,17 +35,17 @@ gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'will_paginate', '>= 3.0.7'
 
 group :production do
-  gem 'pg', '0.17.1'
-  gem 'rails_12factor', '0.0.2'
+   gem 'pg'
+   gem 'rails_12factor', '0.0.2'
 end
 
-# group :production do 
-#   gem 'mysql', '2.8.1'
-# end
+#group :production do 
+#  gem 'mysql', '2.8.1'
+#end
 
-#gem 'will_paginate-bootstrap', '~> 1.0.1'
+gem 'will_paginate-bootstrap', '~> 1.0.1'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 # gem 'unicorn'
